@@ -19,8 +19,7 @@ public class MainTest {
     ClienteResidencial clienteResidencial2;
 
     /**
-     * Creamos el setup para los demas test con una instancia
-     * de CentralTelefonica y otra de Cliente
+     * Creamos el setup para los demas test
      */
     @Before
     public void setUp() {
@@ -114,12 +113,22 @@ public class MainTest {
         assertFalse(centralTelefonica.getClientes().contains(cliente));
     }
 
+    /**
+     * Test para comprobar si se hace efectiva la baja
+     * temporal de un cliente
+     */
     @Test
     public void testBajaTemporal() {
         centralTelefonica.bajaTemporal(cliente);
         assertEquals(SUSPENDIDO, cliente.getEstado());
     }
 
+
+    /**
+     * Test de comprobacion para el metodo que
+     * calcula el pago que debe ralizar cada cliente
+     * segun los servivios contratados.
+     */
     @Test
     public void testPagoMensualCliente() {
         centralTelefonica.pagoMensual(cliente);
@@ -135,5 +144,4 @@ public class MainTest {
         centralTelefonica.pagoMensual(clienteResidencial2);
         assertEquals(101, clienteResidencial2.getPagoMensual());
     }
-
 }

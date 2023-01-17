@@ -1,5 +1,11 @@
 package Entidades;
 
+/**
+ * Clase que representa a los clientes de estatales
+ * de la central telefonica.
+ * Hereda de la clase Cliente
+ */
+
 public class ClienteEstatal extends Cliente {
     private boolean esLineaArrendada;
 

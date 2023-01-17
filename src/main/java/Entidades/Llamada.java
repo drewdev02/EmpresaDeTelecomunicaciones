@@ -5,6 +5,11 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+/**
+ * Clase que representa las llamadas realizadas
+ * por los clientes de la central telefonica.
+ * Es la clase base de la jerarquia de llamada
+ */
 @Getter
 @Setter
 public class Llamada {

@@ -36,10 +36,25 @@ public class CentralTelefonica {
 
     }
 
+    /**
+     * Este metodo resive un cliente y cambia el estado
+     * de su cuenta a baja temporal (suspendida)
+     *
+     * @param cliente
+     */
     public void bajaTemporal(Cliente cliente) {
 
     }
 
+    /**
+     * Este metodo resive un cliente y segun los
+     * servicios contratados por este calcula el pago mensual
+     * que debe realizar devolviendo el monto del pago mensual
+     * como un float
+     *
+     * @param cliente
+     * @return
+     */
     public float pagoMensual(Cliente cliente) {
         return 0;
     }

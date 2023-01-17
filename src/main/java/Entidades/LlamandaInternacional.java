@@ -3,6 +3,12 @@ package Entidades;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Esta clase representa las llamadas
+ * de tipo internacional que puedan ser realizadas
+ * por el cliente.
+ * Hereda de la clase Llamada.
+ */
 @Getter
 @Setter
 public class LlamandaInternacional extends Cliente {
