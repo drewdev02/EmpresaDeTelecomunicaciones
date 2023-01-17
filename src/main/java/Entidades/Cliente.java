@@ -5,9 +5,15 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 
+/**
+ * Esta clase representa a un cliente de la central telfonica
+ * es la clase base de la jerarquia de clientes
+ */
 @Getter
 @Setter
+
 public class Cliente {
+
     protected String nombre;
     protected String numeroCarnet;
     protected String direccion;
@@ -32,5 +38,21 @@ public class Cliente {
 
     public Cliente() {
 
+    }
+
+    /**
+     * Este metodo retorna el nombre del cliente
+     *
+     * @return nombre
+     */
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nombre='" + nombre + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", numeroLlamadas=" + numeroLlamadas +
+                ", pagoMensual=" + pagoMensual +
+                '}';
     }
 }
