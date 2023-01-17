@@ -12,8 +12,4 @@ public class LlamandaInternacional extends Cliente {
         super(nombre, numeroCarnet, direccion, telefono, numeroLlamadas, estado, horaDespertar, pagoMensual);
         this.tarifaPais = tarifaPais;
     }
-
-    public LlamandaInternacional() {
-        super();
-    }
 }
