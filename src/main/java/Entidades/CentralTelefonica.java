@@ -11,12 +11,12 @@ public class CentralTelefonica {
     private ArrayList<Cliente> clientes = new ArrayList<>();
 
     public void addCliente(Cliente cliente) {
-        clientes.add(cliente);
+        this.clientes.add(cliente);
 
     }
 
     public void remCliente(Cliente cliente) {
-        clientes.remove(cliente);
+        this.clientes.remove(cliente);
 
     }
 }

@@ -14,7 +14,8 @@ public class MainTest {
     @Before
     public void setUp() {
         centralTelefonica = new CentralTelefonica();
-        cliente = new Cliente("Juan", "123456", "Calle 1", "123456", 10, "Activo", "8:00", 100);
+        cliente = new Cliente("Juan", "123456", "Calle 1", "123456", 10,
+                "Activo", "8:00", 100);
     }
 
     @Test
