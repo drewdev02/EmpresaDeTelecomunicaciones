@@ -13,4 +13,6 @@ public class ClienteResidencial extends Cliente {
         super(nombre, numeroCarnet, direccion, telefono, numeroLlamadas, estado, horaDespertar, pagoMensual);
     }
 
+    public ClienteResidencial() {
+    }
 }
