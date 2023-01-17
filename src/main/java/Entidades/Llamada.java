@@ -21,4 +21,7 @@ public class Llamada {
         this.fechaHora = fechaHora;
         this.costoLlamada = costoLlamada;
     }
+
+    public Llamada() {
+    }
 }

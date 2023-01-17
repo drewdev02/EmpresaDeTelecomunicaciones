@@ -35,4 +35,12 @@ public class CentralTelefonica {
         this.clientes.remove(cliente);
 
     }
+
+    public void bajaTemporal(Cliente cliente) {
+
+    }
+
+    public float pagoMensual(Cliente cliente) {
+        return 0;
+    }
 }

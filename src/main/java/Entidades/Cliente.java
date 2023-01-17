@@ -19,12 +19,12 @@ public class Cliente {
     protected String direccion;
     protected String telefono;
     protected int numeroLlamadas;
-    protected String estado;
+    protected EstadoCliente estado;
     protected String horaDespertar;
     protected ArrayList<Llamada> llamadas = new ArrayList<>();
     double pagoMensual;
 
-    public Cliente(String nombre, String numeroCarnet, String direccion, String telefono, int numeroLlamadas, String estado, String horaDespertar, double pagoMensual) {
+    public Cliente(String nombre, String numeroCarnet, String direccion, String telefono, int numeroLlamadas, EstadoCliente estado, String horaDespertar, double pagoMensual) {
         this.nombre = nombre;
         this.numeroCarnet = numeroCarnet;
         this.direccion = direccion;
