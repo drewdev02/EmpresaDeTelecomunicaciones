@@ -13,8 +13,8 @@ public class MainTest {
 
     @Before
     public void setUp() {
-        CentralTelefonica centralTelefonica = new CentralTelefonica();
-        Cliente cliente = new Cliente("Juan", "123456", "Calle 1", "123456", 10, "Activo", "8:00", 100);
+        centralTelefonica = new CentralTelefonica();
+        cliente = new Cliente("Juan", "123456", "Calle 1", "123456", 10, "Activo", "8:00", 100);
     }
 
     @Test
