@@ -20,12 +20,12 @@ public class MainTest {
     @Test
     public void testAddCliente() {
         centralTelefonica.addCliente(cliente);
-
         assertTrue(centralTelefonica.getClientes().contains(cliente));
     }
 
     @Test
     public void testRmdCliente() {
+        centralTelefonica.addCliente(cliente);
         centralTelefonica.remCliente(cliente);
         assertFalse(centralTelefonica.getClientes().contains(cliente));
     }
