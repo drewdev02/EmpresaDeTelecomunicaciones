@@ -10,7 +10,10 @@ public class MainTest {
     CentralTelefonica centralTelefonica;
     Cliente cliente;
 
-
+    /**
+     * Creamos el setup para los demas test con una instancia
+     * de CentralTelefonica y otra de Cliente
+     */
     @Before
     public void setUp() {
         centralTelefonica = new CentralTelefonica();
@@ -18,12 +21,20 @@ public class MainTest {
                 "Activo", "8:00", 100);
     }
 
+    /**
+     * Test para comprobar si se agraga el cliente al listado de
+     * la central telefonica
+     */
     @Test
     public void testAddCliente() {
         centralTelefonica.addCliente(cliente);
         assertTrue(centralTelefonica.getClientes().contains(cliente));
     }
 
+    /**
+     * Test para comprobar si el cliente se elimina con exito
+     * del listado de la central telefonica
+     */
     @Test
     public void testRmdCliente() {
         centralTelefonica.addCliente(cliente);
